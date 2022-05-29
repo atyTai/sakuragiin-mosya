@@ -264,8 +264,31 @@
                                 メール：info@mysite.com</p>
                         </div>
 
-                        <form
+                        <form action="https://api.staticforms.xyz/submit" method="post"
                             style="color:black;  margin-left:4%; margin-top: 9%; margin-bottom: 5%; font-family: 'メイリオ', Meiryo;">
+
+                            <input type="text" name="honeypot" style="display:none">
+                            <input type="hidden" name="accessKey" value="4b6b92a3-476f-4c38-8fab-93cffcddf501">
+                            <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました" />
+                            <input type="hidden" name="replyTo" value="at2y-5667@jcom.zaq.ne.jp">
+                            <input type="hidden" name="redirectTo"
+                                value="https://atytai.github.io/sakuragiin-mosya/thank.html">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                             <label>年代</label>
                             <select style="margin-right:10%;">
@@ -281,23 +304,36 @@
                             <label>その他</label><input type="radio" name="gender">
                             <br><br>
                             <label>氏名</label><br>
-                            <input type="text" placeholder="名前を入力してください" style="width:80%;"><br>
+                            <input name="name" type="text" placeholder="名前を入力してください" style="width:80%;"><br>
 
                             <br>
                             <label>ふりがな</label><br>
-                            <input type="text" placeholder="ふりがなを入力してください" style="width:80%;">
+                            <input name="hurigana" type="text" placeholder="ふりがなを入力してください" style="width:80%;">
                             <br><br>
                             <label>メールアドレス<span style="color:red;">&nbsp;*</span></label><br>
-                            <input type="text" name="email" placeholder="メールアドレスを入力してください" class="contact-textbox"
-                                style="width:80%;">
+                            <input name="email" type="text" name="email" placeholder="メールアドレスを入力してください"
+                                class="contact-textbox" style="width:80%;">
 
                             <br><br>
                             <label>電話番号</label><br>
-                            <input type="text" name="email" placeholder="電話番号を入力してください" class="contact-textbox"
-                                style="width:80%;">
+                            <input name="tel" type="text" name="email" placeholder="電話番号を入力してください"
+                                class="contact-textbox" style="width:80%;">
                             <br><br>
-                            <label>お問い合わせ内容</label><br>
-                            <textarea placeholder="メッセージを入力してください" style="width:80%; height: 40vh;"></textarea>
+
+
+                            <div>
+                                <div class="contact-heading">
+                                    <label class="contact-label">お問い合わせ内容</label>
+                                </div>
+                                <div>
+                                    <textarea class="contact-textarea" placeholder="メッセージを入力してください" name="message"
+                                        style="width:80%; height: 40vh;"></textarea>
+                                </div>
+                            </div>
+
+
+
+
 
                             <br><br>
                             <label><a href="https://aaa" style="color:black;">利用規約</a>に同意する</label>
@@ -309,7 +345,6 @@
                             <input type="reset" value="リセット"
                                 style="background-color: #57C4FF!important; border-color: #57C4FF;">
                         </form>
-
 
                         <!-- 画像を配置 -->
 
