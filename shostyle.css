@@ -1,0 +1,508 @@
+/* 全体 */
+
+body {
+    color: #4193BF;
+    font-family: 'ＭＳ Ｐ明朝';
+}
+
+
+.img11,
+.img22,
+.img33 {
+    display: none;
+}
+
+
+
+/* ナビゲーション */
+.nav {
+    position: relative;
+    top: 0;
+}
+
+/* モーダル */
+.modal {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.5; */
+    z-index: 10;
+    display: none;
+}
+
+
+
+.naka {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 576px;
+    background-color: white;
+    opacity: 1;
+}
+
+.naka ul {
+    margin-top: 3vh;
+    margin-left: 35%;
+}
+
+.naka a {
+    padding: 0 10px;
+    /* display: none; */
+    font-size: 25px;
+}
+
+/* モーダル修了 */
+
+
+/* ナビゲーション修了 */
+
+/* キャッチコピー */
+
+.to {
+    height: 310px;
+}
+
+.top {
+    background-position: right;
+    background-image: url("img/紹介トップスクリーンショット 2022-05-27 093951.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: o.7s;
+    height: 310px;
+    /* text-align: right; */
+
+}
+
+.top:hover {
+
+    background-image: url("img/s名称未設定.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    /* text-align: right; */
+
+}
+
+
+
+/* キャッチコピー修了 */
+
+/* メイン */
+.main {
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+
+}
+
+.taitol1,
+.taitol2,
+.taitol3,
+.rega2,
+.tega3 {
+    width: 100%;
+}
+
+.tega1 {
+    width: 80%;
+}
+
+.as,
+.fg,
+.tg {
+    position: relative;
+}
+
+.ass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+
+}
+
+.fgg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+
+
+}
+
+.tgg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+
+
+}
+
+.ass:hover {
+    background-color: #2B6280;
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+.fgg:hover {
+    background-color: #2B6280;
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+
+.tgg:hover {
+    background-color: #2B6280;
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+
+.isi {
+    width: 20%;
+}
+
+.isi {
+
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    background-color: #B8B8B8;
+}
+
+
+.mizubyou {
+    /* width: 39.25%; */
+    background-color: #57C4FF;
+    width: 146px;
+    height: 170px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+/* メイン 修了*/
+
+/* フッター開始 */
+
+.footer {
+    display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.sita {
+    width: 19%;
+    text-align: center;
+    background-color: #E0DFDF;
+    margin-right: 1.25%;
+    color: #7C7C7C;
+}
+
+.hidarisita {
+    text-align: left;
+    padding: 0 20%;
+    padding-top: 20%;
+    margin: 0;
+
+}
+
+.denwa {
+    width: 19%;
+    text-align: center;
+    background-color: #E0DFDF;
+
+}
+
+/* レスポンシブ */
+
+
+
+/* ナビゲーションバー */
+.hanb {
+    display: none;
+    margin-left: auto;
+}
+
+.hanb:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:992px) {
+
+    .hanb {
+        display: block;
+
+
+    }
+
+
+    .isyo {
+        margin-top: 0 !important;
+    }
+
+
+    .to {
+        height: auto;
+    }
+
+    .top {
+        width: 100%;
+        height: 300px;
+        background-size: contain !important;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .isi {
+        height: 170px !important;
+    }
+
+}
+
+
+
+
+
+.hanb2 {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .hanb2 {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    .hanb2:hover {
+        opacity: 0.7;
+    }
+
+    .hanb2 img {
+        width: 40px;
+    }
+
+    .hanb {
+        display: none;
+    }
+
+
+
+    main,
+    .main,
+    .shosho {
+        width: auto !important;
+        margin: 0 5px;
+    }
+
+    .to {
+        padding-right: 5px;
+    }
+
+    .top {
+        height: 35vh;
+        background-size: contain;
+        margin-right: 5px;
+        background-position: center;
+        background-size: contain !important;
+
+    }
+
+    .isyo {
+        font-size: 20px !important;
+    }
+
+
+    .mai {
+        flex-direction: column;
+        flex-wrap: none;
+        height: auto !important;
+        width: auto !important;
+        font-size: 12px !important;
+
+    }
+
+
+    .isi {
+
+        order: 1;
+        width: 100% !important;
+    }
+
+    .isi img {
+        padding-top: 2% !important;
+    }
+
+    .taitol1 {
+        order: 2;
+        width: 100% !important;
+    }
+
+    .tega1 p,
+    .tega2 p,
+    .tega3 p {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .tega1 {
+        order: 3;
+        display: block !important;
+        width: 100% !important;
+
+    }
+
+
+    .img1 {
+        display: none;
+    }
+
+    .img11 {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px !important;
+
+    }
+
+    .img2 {
+        display: none !important;
+    }
+
+    .img22 {
+        display: block;
+        margin-bottom: 10px !important;
+    }
+
+    .img3 {
+        display: none !important;
+    }
+
+    .img33 {
+        display: block;
+        margin-bottom: 10px !important;
+    }
+
+    .taitol2 {
+        order: 4;
+        width: 100% !important;
+    }
+
+    .tega2 {
+        order: 5;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .taitol3 {
+        order: 6;
+        width: 100% !important;
+    }
+
+    .tega3 {
+        order: 7;
+        display: block !important;
+        width: 100% !important;
+    }
+
+
+
+
+
+
+
+
+    /* フッター */
+
+    .footer {
+        flex-direction: column;
+        flex-wrap: none;
+        height: auto !important;
+        width: auto !important;
+        margin-top: 5px !important;
+        margin-bottom: 0 !important;
+        font-size: 12px !important;
+
+
+    }
+
+    .futex {
+        order: 5;
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+    }
+
+    .futex p {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        margin-top: 0 !important;
+    }
+
+    .mail {
+        order: 1;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+
+
+    .mapp {
+        order: 3;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+
+    .glmap {
+        order: 4;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 65vh !important;
+    }
+
+    .denwa {
+        order: 2;
+        width: auto !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+    /* フッターここまで */
+}
