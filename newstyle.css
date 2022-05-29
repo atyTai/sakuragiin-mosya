@@ -1,0 +1,332 @@
+/* 全体 */
+
+body {
+    color: #4193BF;
+    font-family: 'ＭＳ Ｐ明朝';
+}
+
+
+
+
+
+
+/* ナビゲーション */
+.nav {
+    position: relative;
+    top: 0;
+}
+
+/* モーダル */
+.modal {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.5; */
+    z-index: 10;
+    display: none;
+}
+
+
+
+.naka {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 576px;
+    background-color: white;
+    opacity: 1;
+}
+
+.naka ul {
+    margin-top: 3vh;
+    margin-left: 35%;
+}
+
+.naka a {
+    padding: 0 10px;
+    /* display: none; */
+    font-size: 25px;
+}
+
+/* モーダル修了 */
+
+
+
+/* ナビゲーション修了 */
+
+/* キャッチコピー */
+
+.to {
+    height: auto;
+    width: 1024px;
+}
+
+.top {
+    /* background-position: right; */
+    /* background-image: url("img/入院案内トップスクリーンショット 2022-05-27 191543.png"); */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* width: 790px; */
+
+
+}
+
+
+.topho {
+    display: block;
+    position: relative;
+
+}
+
+.hoo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #2B6280; */
+}
+
+.hoo:hover {
+    transition: 0.7s;
+    background-color: #2B6280;
+    opacity: 0.7;
+    /* filter: grayscale(100%); */
+    /* filter: invert(88%) sepia(100%) saturate(2929%) hue-rotate(104deg) brightness(99%) contrast(104%); */
+    /* filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%); */
+}
+
+
+
+/* キャッチコピー修了 */
+
+/* メイン */
+.main {
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+
+
+}
+
+.mai {
+
+
+    padding: 0;
+
+
+
+}
+
+.maa {
+    width: 100%;
+}
+
+
+
+.mizubyou {
+    /* width: 39.25%; */
+    background-color: #57C4FF;
+    width: 165px;
+    height: 170px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+/* メイン 修了*/
+
+/* フッター開始 */
+
+.footer {
+    display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.sita {
+    width: 19%;
+    text-align: center;
+    background-color: #E0DFDF;
+    margin-right: 1.25%;
+    color: #7C7C7C;
+}
+
+.hidarisita {
+    text-align: left;
+    padding: 0 20%;
+    padding-top: 20%;
+    margin: 0;
+
+}
+
+.denwa {
+    width: 19%;
+    text-align: center;
+    background-color: #E0DFDF;
+
+}
+
+/* レスポンシブ */
+
+
+
+/* ナビゲーションバー */
+.hanb {
+    display: none;
+    margin-left: auto;
+}
+
+.hanb:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:992px) {
+
+    .hanb {
+        display: block;
+    }
+
+
+    .nyuin {
+        margin-top: 0 !important;
+    }
+
+    .nyuin br {
+        display: none;
+    }
+
+
+
+
+    .mai,
+    .mmai,
+
+    .to {
+        width: auto !important;
+    }
+
+
+}
+
+.hanb2 {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+
+    .nyuin {
+
+        font-size: 20px !important;
+    }
+
+    #about,
+    #abou {
+
+        padding: 5px;
+    }
+
+    .main {
+        margin-left: 5px;
+    }
+
+
+    .hanb2 {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    .hanb2:hover {
+        opacity: 0.7;
+    }
+
+    .hanb2 img {
+        width: 40px;
+    }
+
+    .hanb {
+        display: none;
+    }
+
+    /* フッター */
+
+    .footer {
+        flex-direction: column;
+        flex-wrap: none;
+        height: auto !important;
+        width: auto !important;
+        margin-top: 5px !important;
+        margin-bottom: 0 !important;
+        font-size: 12px !important;
+        margin-bottom: 0 !important;
+
+    }
+
+    .futex {
+        order: 5;
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+    }
+
+    .futex p {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        margin-top: 0 !important;
+    }
+
+    .mail {
+        order: 1;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+
+
+    .mapp {
+        order: 3;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+
+    .glmap {
+        order: 4;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 65vh !important;
+    }
+
+    .denwa {
+        order: 2;
+        width: auto !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+    /* フッターここまで */
+
+}
