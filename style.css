@@ -1,0 +1,637 @@
+/* 全体 */
+
+body {
+    color: #4193BF;
+    font-family: 'ＭＳ Ｐ明朝';
+}
+
+
+
+
+
+
+/* ナビゲーション */
+.nav {
+    position: relative;
+    top: 0;
+}
+
+/* モーダル */
+.modal {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.5; */
+    z-index: 10;
+    display: none;
+}
+
+
+
+.naka {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 576px;
+    background-color: white;
+    opacity: 1;
+}
+
+.naka ul {
+    margin-top: 3vh;
+    margin-left: 35%;
+}
+
+.naka a {
+    padding: 0 10px;
+    /* display: none; */
+    font-size: 25px;
+}
+
+/* モーダル修了 */
+
+/* モーダル２ */
+
+.naka2 {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 1;
+
+    /* text-align: center; */
+}
+
+.naka2 ul {
+    width: 100%;
+    margin-top: 3vh;
+    padding-left: 30%;
+}
+
+.naka2 a {
+    padding: 0 10px;
+    /* display: none; */
+    font-size: 1.6rem;
+}
+
+
+/* ナビゲーション修了 */
+
+/* キャッチコピー */
+
+.to {
+    height: 400px;
+}
+
+.top {
+    background-image: url("img/topスクリーンショット 2022-05-25 234026.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: right;
+    position: relative;
+    /* z-index: 3; */
+
+
+    /* background: linear-gradient(25deg, rgba(43, 98, 128, 0.7), rgba(43, 98, 128, 0.7)), url("img/透明.png"); */
+}
+
+
+/* .top::before { */
+/* content: ''; */
+/* position: absolute; */
+/* width: 100%; */
+/* height: 100%; */
+/* opacity: 0.7; */
+/* color: red; */
+/* z-index: 4; */
+/*  */
+/* } */
+
+.top:hover {
+    background-image: url("img//topフィルター.png");
+
+    position: relative;
+
+    transition: 0.7s;
+
+}
+
+
+
+/* キャッチコピー修了 */
+
+/* メイン */
+.main {
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+
+}
+
+.mizubyou {
+    width: 39.25%;
+    background-color: #57C4FF;
+    margin-right: 1.4%;
+    margin-bottom: 20px;
+}
+
+.hart,
+.isi,
+.isya,
+.contact,
+.bed,
+.sita {
+    width: 19%;
+}
+
+.hart {
+    margin-right: 1.1%;
+}
+
+.isi {
+    margin-left: 1.25%;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    background-color: #B8B8B8;
+}
+
+
+.contact {
+    background-color: #B8B8B8;
+}
+
+
+.hutyou {
+    width: 19%;
+    background-image: url("img/婦長スクリーンショット 2022-05-25 212512.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+.hutyou:hover {
+    width: 19%;
+    background-image: url("img/f名称未設定.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.7s;
+}
+
+
+.hart {
+    text-align: center;
+
+}
+
+.nagaisu {
+    width: 39.25%;
+    background-image: url("img/椅子スクリーンショット 2022-05-25 222315.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.nagaisu:hover {
+    width: 39.25%;
+    background-image: url("img/名x称未設定.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin-bottom: 20px;
+    transition: 0.7s;
+}
+
+
+
+
+.isya {
+    height: 150px
+}
+
+.isya a {
+    position: relative;
+    display: block;
+}
+
+.df {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.df:hover {
+
+    background-color: #2B6280;
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+.bun {
+    width: 39.25%
+}
+
+.zikan {
+    width: 39.25%;
+    margin: 0 1.25%;
+
+}
+
+.bun {
+    margin-right: 1.5%;
+}
+
+.contact {
+    text-align: center;
+
+}
+
+.contact img {
+    line-height: 100%;
+}
+
+
+.bed {
+    background-color: #57C4FF;
+}
+
+
+
+/* メイン 修了*/
+
+/* フッター開始 */
+
+.footer {
+    display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.sita {
+    width: 19%;
+    text-align: center;
+    background-color: #E0DFDF;
+    margin-right: 1.25%;
+    color: #7C7C7C;
+}
+
+.hidarisita {
+    text-align: left;
+    padding: 0 20%;
+    padding-top: 20%;
+    margin: 0;
+
+}
+
+.denwa {
+    width: 19%;
+    text-align: center;
+    background-color: #E0DFDF;
+
+}
+
+
+
+/* レスポンシブ */
+
+
+
+/* ナビゲーションバー */
+.hanb {
+    display: none;
+    text-align: right;
+    margin-left: auto;
+}
+
+.hanb div {
+    margin-left: auto;
+}
+
+.hanb:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:992px) {
+
+    /* ナビゲーションバー */
+    .hanb {
+        display: block;
+    }
+
+
+    /* キャッチコピー */
+
+    .about {
+        margin-top: 0 !important;
+    }
+
+    .about br {
+        display: none;
+    }
+
+    .bed a img {
+        padding-top: 30% !important;
+    }
+
+    .contact a img {
+        padding-top: 50% !important;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    #mein {
+        font-size: 13px;
+    }
+
+    .zikan img {
+        width: 85px !important;
+        padding-top: 60% !important;
+    }
+
+    .contact a img {
+        padding-top: 65% !important;
+    }
+
+    .to,
+    .top {
+        height: 300px;
+    }
+
+}
+
+.hanb2 {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .hanb2 {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    .hanb2:hover {
+        opacity: 0.7;
+    }
+
+    .hanb2 img {
+        width: 40px;
+    }
+
+    .hanb {
+        display: none;
+    }
+
+    .about .container {
+        padding: 0 5px !important;
+    }
+
+    .to,
+    .top {
+        height: 30vh !important;
+        background-position: center;
+    }
+
+
+
+    .dai {
+        font-size: 33px !important;
+    }
+
+    #about .container {
+        width: auto !important;
+        margin: 0 7px;
+    }
+
+    .row h2 {
+        font-size: 18px !important;
+    }
+
+    /* フッター */
+
+    .footer {
+        flex-direction: column;
+        flex-wrap: none;
+        height: auto !important;
+        width: auto !important;
+        margin-top: 5px !important;
+        margin-bottom: 0 !important;
+        font-size: 12px !important;
+        margin-bottom: 0 !important;
+
+    }
+
+    .futex {
+        order: 5;
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        margin-top: 0 !important;
+    }
+
+    .futex p {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        margin-top: 0 !important;
+    }
+
+    .mail {
+        order: 1;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+
+
+    .mapp {
+        order: 3;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+
+    .glmap {
+        order: 4;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 65vh !important;
+    }
+
+    .denwa {
+        order: 2;
+        width: auto !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+    }
+
+    /* フッターここまで */
+
+
+    /* メイン */
+
+    .main {
+        flex-direction: column;
+        flex-wrap: none;
+        height: auto !important;
+        width: auto !important;
+        margin: 0 5px;
+        font-size: 12px !important;
+
+    }
+
+    .mizubyou {
+        order: 1;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 200px !important;
+    }
+
+    .hutyou {
+        order: 2;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 40em !important;
+        background-position: center;
+
+    }
+
+    .isi {
+        order: 3;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 190px !important;
+    }
+
+    .isi img {
+        padding-top: 25px !important;
+    }
+
+    .nagaisu {
+        order: 4;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 250px !important;
+        background-position: center;
+    }
+
+    .bun {
+        order: 5;
+        width: auto !important;
+        margin-right: 0 !important;
+
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .isya {
+        order: 8;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: auto !important;
+        text-align: center !important;
+        overflow: hidden !important;
+    }
+
+    .isya img {
+        width: 80% !important;
+
+
+
+    }
+
+    .contact {
+        order: 9;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 80px !important;
+    }
+
+    .contact a img {
+        padding-top: 13px !important;
+    }
+
+
+    .zikan {
+        order: 10;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 170px !important;
+    }
+
+    .zikan div {
+        padding-left: 14% !important;
+
+    }
+
+
+
+    .bed {
+        order: 7;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 180px !important;
+    }
+
+    .bed a {
+        display: flex !important;
+    }
+
+    .bed a img {
+        padding-top: 60px !important;
+        padding-left: 20%;
+    }
+
+    .bed p {
+        padding-top: 60px !important;
+        padding-left: 5%;
+    }
+
+    .hart {
+        order: 6;
+        width: auto !important;
+        margin-right: 0 !important;
+        margin-bottom: 5px !important;
+        height: 220px !important;
+    }
+
+    /* .bed { */
+    /* order: 5; */
+    /* } */
+
+
+
+}
